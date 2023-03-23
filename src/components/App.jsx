@@ -29,6 +29,7 @@ export default function App() {
     }
   };
 
+
   const countTotalFeedback = () => {
     return good + bad + neutral;
   };
@@ -46,7 +47,7 @@ export default function App() {
         <Section title="Please leave feedback">
           <FeedbackOptions
             options={options}
-            handleClickButton={onLeaveFeedback}
+            onLeaveFeedback={onLeaveFeedback}
           ></FeedbackOptions>
         </Section>
 
